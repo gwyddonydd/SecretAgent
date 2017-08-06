@@ -129,3 +129,14 @@ div.company-info{
 .info span{
   color: black;
 }
+
+
+/* Footer Section */
+
+footer{
+  margin-top: 5rem;
+  background-color: black;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
