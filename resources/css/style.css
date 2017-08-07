@@ -43,6 +43,11 @@ div.header-background {
   height: 25rem;
 }
 
+
+.nav--mob{
+  display: none;
+}
+
 nav {
   background-color: firebrick;
 }
@@ -140,3 +145,16 @@ footer{
   display: flex;
   align-items: center;
 }
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px){
+  .nav--desktop{
+    display: none;}
+  .nav--mob{
+    display: block;}
+  .nav--mob ul{
+    display: flex;
+    justify-content: center;
+  }
