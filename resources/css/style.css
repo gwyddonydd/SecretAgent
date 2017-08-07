@@ -43,8 +43,7 @@ div.header-background {
   height: 25rem;
 }
 
-
-.nav--mob{
+.nav--mob {
   display: none;
 }
 
@@ -114,16 +113,16 @@ nav a {
   max-width: 8em;
 }
 
-div.company-info{
+div.company-info {
   display: flex;
   justify-content: space-between;
 }
 
-.info{
+.info {
   width: 35%;
 }
 
-.info h4{
+.info h4 {
   background-color: black;
   padding-left: 2rem;
   padding-top: 1rem;
@@ -131,14 +130,14 @@ div.company-info{
   margin: 0.5rem 0;
 }
 
-.info span{
+.info span {
   color: black;
 }
 
 
 /* Footer Section */
 
-footer{
+footer {
   margin-top: 5rem;
   background-color: black;
   height: 5rem;
@@ -149,12 +148,83 @@ footer{
 
 /* Media Queries */
 
-@media only screen and (max-width: 1024px){
-  .nav--desktop{
-    display: none;}
-  .nav--mob{
-    display: block;}
-  .nav--mob ul{
+
+/* Tablets */
+
+@media only screen and (max-width: 1024px) {
+  .nav--desktop {
+    display: none;
+  }
+  .nav--mob {
+    display: block;
+  }
+  ul.nav--mob {
     display: flex;
     justify-content: center;
   }
+  .product-box {
+    width: 47%;
+  }
+  .product-box:last-child {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+.new-arrival--mob {
+  display: none;
+}
+
+
+/* Cell Phones */
+
+@media only screen and (max-width: 470px) {
+  .new-arrival {
+    width: 100%;
+    padding: 1em 2em;
+  }
+  .header-background {
+    height: 15rem;
+    overflow: hidden;
+  }
+  .msg-container {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .new-arrival h4 {
+    font-size: 0.77rem
+  }
+  .new-arrival p {
+    font-size: 1rem
+  }
+  .product-box {
+    width: 90%;
+    margin: auto;
+  }
+  .product-box:nth-last-child(2) {
+    display: none;
+  }
+
+  div.company-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info {
+    width: 90%;
+  }
+
+  div.company-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  footer{
+    text-align: center;
+  }
+}
